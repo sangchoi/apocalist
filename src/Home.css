@@ -11,18 +11,35 @@
                          "horizontalNav"
                          "bodyDiv";
   } */
-
+/* FONTS -------------------------------------------------------------------- */
   @font-face {
     font-family: 'Apocalypse';
     src: local('Apocalypse'), url(./fonts/Apocalypse.ttf) format('truetype');
   }
 
+  @font-face {
+    font-family: 'Roboto-Bold';
+    src: local('Roboto-Bold'), url(./fonts/Roboto-Bold.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Roboto-Medium';
+    src: local('Roboto-Medium'), url(./fonts/Roboto-Medium.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Roboto-Thin';
+    src: local('Roboto-Thin'), url(./fonts/Roboto-Thin.ttf) format('truetype');
+  }
+
 .ApocalistHeader {
     border: 1px green solid;
     font-family: Apocalypse;
-    font-size: 3em;
+    font-size: 4em;
     padding: 0;
-    margin: 
+    letter-spacing: .2em;
+    margin: 0 auto;
+    color: rgb(45, 43, 43);
 }
 
 /* SEARCH BAR DIV -------------------------------------------------------------------- */
@@ -47,6 +64,7 @@
 .searchInput {
     font-size: .6em;
     text-align: center;
+    font-family: Apocalypse;
 }
 
 .menuIconDiv {
