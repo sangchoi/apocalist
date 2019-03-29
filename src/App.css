@@ -7,8 +7,12 @@ body {
   height: 100%;
 }
 
+a {
+  color: white;
+}
+
 .chosen {
-  background-color: rgba(252, 252, 252, .2);
+  background-color: rgba(252, 252, 252, 0.2);
   color: red;
 }
 
@@ -60,6 +64,7 @@ body {
 .postingsDiv {
   border: 3px solid black;
   display: flex;
+  background-color: #2d2b2b;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -99,11 +104,12 @@ body {
 }
 .createPostingButtonDiv {
   background-color: rgb(183, 39, 14);
+  color: white;
   border-radius: 0.3rem;
   padding: 0.5rem;
   position: fixed;
   bottom: 1rem;
-  left: 44%;
+  right: 1rem;
   display: flex;
   align-items: center;
 }
@@ -128,6 +134,15 @@ body {
   text-align: left;
 }
 
+.postingsDivShow {
+  border: 3px solid black;
+  display: flex;
+  background-color: #2d2b2b;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .postingShowDiv {
   border: 3px solid olivedrab;
   display: flex;
@@ -144,6 +159,19 @@ body {
 button {
   border-radius: 1em;
   padding: 0.5em;
+}
+
+.showPostingCard {
+  border: 3px solid purple;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin: 0;
 }
 
 .showPostingTitleDiv {
@@ -169,4 +197,24 @@ button {
   background-color: rgb(33, 116, 8);
   border-radius: 0.2em;
   padding: 0 0.2em;
+}
+
+.descriptionDiv {
+  width: 330px;
+  margin: 0;
+  padding: 0;
+}
+
+.postingImageShow {
+  width: 350px;
+  text-align: center;
+}
+
+.postingButtonsDivShow {
+  border: 3px solid olivedrab;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
 }
