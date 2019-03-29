@@ -7,15 +7,16 @@ import Postings from './Postings';
 //Components we put into our render
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const postList = [];
 const categories = [
+  'weapons',
   'clothing',
-  'hygiene',
   'transportation',
   'food',
+  'hygiene',
   'shelter',
   'medical',
   'tools',
@@ -45,7 +46,7 @@ const postings = [
     description:
       'Picked these up on my trek from Tacoma. Worth 100 cigarettes but will trade for a gallon of water.',
     seller: 'Mary',
-    category: 'food/drink',
+    category: 'food',
     imgUrl:
       'https://photos.offerup.com/CNm75KKi1SF7loUSRVXM8FezBSo=/600x800/f6f4/f6f42d58b28941778373cc599b7a27f1.jpg',
     date: '1 Feb 3022',
@@ -297,7 +298,7 @@ const postings = [
     description:
       'Fair enough, you will have 20 fresh eggs, I will have 20 Cigarettes',
     seller: 'Kristina Hansen',
-    category: 'Food',
+    category: 'food',
     imgUrl: 'https://tennesseegrassfed.com/wp-content/uploads/2016/04/eggs.jpg',
     date: '22 April 3022',
     popularity: 52,
@@ -324,7 +325,7 @@ const postings = [
     location: 'Lake City',
     description: 'Home made breads. Fresh and delicious.',
     seller: 'Henry',
-    category: 'Food',
+    category: 'food',
     imgUrl:
       'https://s3.amazonaws.com/finecooking.s3.tauntonclud.com/app/uploads/2017/04/18182819/fc07go0566-60-main.jpg',
     date: '29 March 3022',
@@ -338,7 +339,7 @@ const postings = [
     location: 'Queen Anne',
     description: 'Value is for 3 Pack.',
     seller: 'Nusret',
-    category: 'Food',
+    category: 'food',
     imgUrl: 'http://www.greekcorner-prague.com/UserFiles/Testoviny/tes1.jpg',
     date: '29 March 3024',
     popularity: '90',
@@ -365,7 +366,7 @@ const postings = [
     location: 'Tacoma',
     description: 'Kids love it.',
     seller: 'Nila',
-    category: 'food ',
+    category: 'food',
     imgUrl:
       'https://canigivemydog.com/wp-content/uploads/2011/12/can-i-give-my-dog-baby-food.jpg',
     date: '26 March 3022',
@@ -379,7 +380,7 @@ const postings = [
     location: 'Kenmore',
     description: 'Healthy protein food source .',
     seller: 'Kim',
-    category: 'food ',
+    category: 'food',
     imgUrl:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Azuki_Beans.jpg/1200px-Azuki_Beans.jpg',
     date: '2 August 3022',
@@ -454,11 +455,6 @@ class App extends Component {
             <Link to='/create-posting'>
               <FontAwesomeIcon icon={faPlus} size='1x' color='#ffffff' /> Create
               a Posting
-            </Link>
-          </div>
-          <div className='homeButtonDiv'>
-            <Link to='/home'>
-              <FontAwesomeIcon icon={faHome} size='3x' color='#ffffff' />
             </Link>
           </div>
           <Route

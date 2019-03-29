@@ -11,8 +11,7 @@ const SearchBar = (props) => {
       <div className='iconDiv'>
         <Router>
           <Link to='/home'>
-            {/* <FontAwesomeIcon icon={faHome} size='1x' color='#000000' /> */}
-            <img className="logologo" src={logo} />
+            <img className='logologo' src={logo} />
           </Link>
         </Router>
       </div>
