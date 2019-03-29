@@ -1,3 +1,9 @@
+{
+  /* <Link to='/home'>
+              <FontAwesomeIcon icon={faHome} size='3x' color='#000000' />
+            </Link> */
+}
+
 [
   {
     item: 'Ammunition',
@@ -20,7 +26,7 @@
     description:
       'Picked these up on my trek from Tacoma. Worth 100 cigarettes but will trade for a gallon of water.',
     seller: 'Mary',
-    category: 'food',
+    category: 'food/drink',
     imgUrl:
       'https://photos.offerup.com/CNm75KKi1SF7loUSRVXM8FezBSo=/600x800/f6f4/f6f42d58b28941778373cc599b7a27f1.jpg',
     date: '1 Feb 3022',

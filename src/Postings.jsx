@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 const Postings = (props) => {
   if (props.categoryBeenSelected === false) {
@@ -17,6 +19,12 @@ const Postings = (props) => {
               {posting.item}
             </Link>
             <span>Location: {posting.location}</span>
+            <div className='postingButtonsDiv'>
+              <button>Send Message</button>
+              <button>
+                <FontAwesomeIcon icon={faHeart} size='1x' color='#D93C04' />
+              </button>
+            </div>
           </div>
         </div>
       );
@@ -38,6 +46,12 @@ const Postings = (props) => {
             </Link>
             <span>Location: {posting.location}</span>
           </div>
+          <div className='postingButtonsDiv'>
+            <button>Send Message</button>
+            <button>
+              <FontAwesomeIcon icon={faHeart} size='1x' color='#D93C04' />
+            </button>
+          </div>
         </div>
       );
     });
@@ -46,12 +60,3 @@ const Postings = (props) => {
 };
 
 export default Postings;
-
-// id: 2,
-//     item: 'baby food',
-//     seller: 'Mike',
-//     category: 'food',
-//     imageUrl: './images/babyfood2.jpg',
-//     tags: ['food', 'baby'],
-//     datePosted: '56',
-//     popularity: '98',

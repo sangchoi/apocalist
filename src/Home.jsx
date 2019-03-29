@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Postings from './Postings';
 import Categories from './Categories';
 import SearchBar from './SearchBar';
-import './Home.css'
+import './Home.css';
 
 class Home extends Component {
   constructor(props) {
@@ -22,9 +22,9 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="home">
+      <div className='home'>
         <div className='pageTitle'>
-          <h1 className="ApocalistHeader">Apocalist</h1>
+          <h1 className='ApocalistHeader'>Apocalist</h1>
         </div>
         <div className='searchBarDiv'>
           <SearchBar
@@ -42,14 +42,11 @@ class Home extends Component {
             {...this.props}
           />
         </div>
-        <div className='bodyDiv'>
-          <div className='searchResultsDiv'>{this.props.postsToDisplay}</div>
-          <Postings
-            postings={this.props.postings}
-            categoryBeenSelected={this.props.categoryBeenSelected}
-            {...this.props}
-          />
-        </div>
+        <Postings
+          postings={this.props.postings}
+          categoryBeenSelected={this.props.categoryBeenSelected}
+          {...this.props}
+        />
       </div>
     );
   }

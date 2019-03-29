@@ -197,6 +197,11 @@ class App extends Component {
               Create a Posting
             </Link>
           </div>
+          <div className='homeButtonDiv'>
+            <Link to='/home'>
+              <FontAwesomeIcon icon={faHome} size='3x' color='#000000' />
+            </Link>
+          </div>
           <Route
             path='/home'
             exact

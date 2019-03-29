@@ -24,7 +24,7 @@ const SearchBar = (props) => {
         />
       </div>
       <div className='menuIconDiv'>
-        <FontAwesomeIcon icon={faBars} size='1.5x' color='#000000' />
+        <FontAwesomeIcon icon={faBars} size='1x' color='#000000' />
       </div>
     </div>
   );
