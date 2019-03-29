@@ -22,7 +22,7 @@ const Postings = (props) => {
             <div className='postingButtonsDiv'>
               <button>Send Message</button>
               <button>
-                <FontAwesomeIcon icon={faHeart} size='1x' color='#D93C04' />
+                <FontAwesomeIcon icon={faHeart} size='1x' color='#ffffff' />
               </button>
             </div>
           </div>
@@ -41,15 +41,21 @@ const Postings = (props) => {
             <img src={posting.imgUrl} alt='posting' className='postingImage' />
           </Link>
           <div className='postingBody'>
-            <Link className="postingBodyLink" to={`/postings/${posting.id}`} onClick={followLink}>
+            <Link
+              className='postingBodyLink'
+              to={`/postings/${posting.id}`}
+              onClick={followLink}
+            >
               {posting.item}
             </Link>
-            <span className="postingsLocation">Location: {posting.location}</span>
+            <span className='postingsLocation'>
+              Location: {posting.location}
+            </span>
           </div>
           <div className='postingButtonsDiv'>
             <button>Send Message</button>
             <button>
-              <FontAwesomeIcon icon={faHeart} size='1x' color='#D93C04' />
+              <FontAwesomeIcon icon={faHeart} size='1x' color='#ffffff' />
             </button>
           </div>
         </div>

@@ -158,7 +158,20 @@ a {
 
 button {
   border-radius: 1em;
+  background-color: rgb(183, 39, 14);
   padding: 0.5em;
+  color: white;
+  border: 1px solid gray;
+}
+
+button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #4caf50; /* Green */
+  color: white;
 }
 
 .showPostingCard {
@@ -217,4 +230,10 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   text-align: left;
+}
+
+.imageUpload {
+  width: 350px;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
