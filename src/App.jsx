@@ -12,16 +12,16 @@ import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const postList = [];
 const categories = [
-  'clothing',
-  'hygiene',
-  'transportation',
-  'food/drink',
-  'shelter',
-  'entertainment',
-  'services',
-  'medical',
-  'tools',
-  'electronics',
+  'Clothing',
+  'Hygiene',
+  'Transportation',
+  'Food/Drink',
+  'Shelter',
+  'Entertainment',
+  'Services',
+  'Medical',
+  'Tools',
+  'Electronics',
 ];
 const postings = [
   {
