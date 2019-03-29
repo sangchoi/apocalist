@@ -1,19 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-const Procedures = (props) => {
-  // const procedures = props.procedures.map((procedure, index) => {
-  //     return <li key={index}><Link to={`/procedures/${procedure.id}`}>{procedure.name}</Link></li>
-  // })
-  return (
-    <h1>categories</h1>
-    // <div className="App">
-    //  <h1>Things we do that hurt:</h1>
-    //  <ul>
-    //      {procedures}
-    //  </ul>
-    // </div>
-  );
+const Categories = (props) => {
+  const categories = props.categories.map((category, index) => {
+    if (props.chosenCategory === category) {
+      return (
+        <span
+          key={index}
+          className='categoryNavItem chosen'
+          value={category}
+          onClick={props.selectCategory}
+        >
+          {category}
+        </span>
+      );
+    } else {
+      return (
+        <span
+          key={index}
+          className='categoryNavItem'
+          value={category}
+          onClick={props.selectCategory}
+        >
+          {category}
+        </span>
+      );
+    }
+  });
+  return <div>{categories}</div>;
 };
 
-export default Procedures;
+export default Categories;
