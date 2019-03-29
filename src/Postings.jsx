@@ -41,10 +41,10 @@ const Postings = (props) => {
             <img src={posting.imgUrl} alt='posting' className='postingImage' />
           </Link>
           <div className='postingBody'>
-            <Link to={`/postings/${posting.id}`} onClick={followLink}>
+            <Link className="postingBodyLink" to={`/postings/${posting.id}`} onClick={followLink}>
               {posting.item}
             </Link>
-            <span>Location: {posting.location}</span>
+            <span className="postingsLocation">Location: {posting.location}</span>
           </div>
           <div className='postingButtonsDiv'>
             <button>Send Message</button>
