@@ -60,6 +60,15 @@ nav {
   text-align: center;
 }
 
+.searchResultsDiv {
+  border: 3px solid orangered;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
 .categoryNavItem {
   color: navy;
   text-decoration: underline;
@@ -72,7 +81,7 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .postingCard {
@@ -81,6 +90,8 @@ nav {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .postingBody {
@@ -106,4 +117,13 @@ nav {
   flex-basis: auto;
   justify-content: center;
   width: 15rem;
+}
+
+.navBarDiv {
+  border: 3px solid rosybrown;
+  z-index: 10;
+  position: fixed;
+  right: 2rem;
+  top: 2rem;
+  height: 8rem;
 }

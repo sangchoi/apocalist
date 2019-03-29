@@ -41,7 +41,7 @@ class Home extends Component {
           />
         </div>
         <div className='bodyDiv'>
-          {this.props.postsToDisplay}
+          <div className='searchResultsDiv'>{this.props.postsToDisplay}</div>
           <Postings postings={this.props.postings} {...this.props} />
         </div>
       </>
