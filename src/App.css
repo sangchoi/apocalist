@@ -15,15 +15,6 @@ nav {
   color: red;
 }
 
-.App {
-  border: 3px solid pink;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-}
-
 .pageTitle {
   border: 3px solid maroon;
   display: flex;
@@ -56,8 +47,8 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .searchResultsDiv {
@@ -120,11 +111,23 @@ nav {
 }
 
 .createPostingButtonDiv {
-  border: 3px solid rosybrown;
-  background-color: rgba(224, 69, 69, 0.95);
-  z-index: 10;
+  background-color: rgb(183, 39, 14);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
   position: fixed;
-  bottom: 2rem;
+  bottom: 1rem;
   display: flex;
   align-items: center;
+}
+
+.postingShowDiv {
+  border: 3px solid teal;
+}
+
+.postingShowBody {
+  border: 3px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }

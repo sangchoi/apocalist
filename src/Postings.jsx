@@ -2,23 +2,47 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Postings = (props) => {
-  const postings = props.postings.map((posting, index) => {
-    let followLink = () => {
-      props.history.push(`/postings/${posting.id}`);
-    };
-    return (
-      <div key={index} className='postingCard'>
-        <img src='https://placekitten.com/400/300' alt='' />
-        <div className='postingBody'>
+  if (props.categoryBeenSelected === false) {
+    let postings = props.postings.map((posting, index) => {
+      let followLink = () => {
+        props.history.push(`/postings/${posting.id}`);
+      };
+      return (
+        <div key={index} className='postingCard'>
           <Link to={`/postings/${posting.id}`} onClick={followLink}>
-            {posting.item}
+            <img src={posting.imgUrl} alt='posting' className='postingImage' />
           </Link>
-          <p>for sale by {posting.seller}</p>
+          <div className='postingBody'>
+            <Link to={`/postings/${posting.id}`} onClick={followLink}>
+              {posting.item}
+            </Link>
+            <span>Location: {posting.location}</span>
+          </div>
         </div>
-      </div>
-    );
-  });
-  return <div className='postingsDiv'>{postings}</div>;
+      );
+    });
+    return <div className='postingsDiv'>{postings}</div>;
+  } else {
+    let postings = props.displayedPostings.map((posting, index) => {
+      let followLink = () => {
+        props.history.push(`/postings/${posting.id}`);
+      };
+      return (
+        <div key={index} className='postingCard'>
+          <Link to={`/postings/${posting.id}`} onClick={followLink}>
+            <img src='https://placekitten.com/400/300' alt='' />
+          </Link>
+          <div className='postingBody'>
+            <Link to={`/postings/${posting.id}`} onClick={followLink}>
+              {posting.item}
+            </Link>
+            <p>for sale by {posting.seller}</p>
+          </div>
+        </div>
+      );
+    });
+    return <div className='postingsDiv'>{postings}</div>;
+  }
 };
 
 export default Postings;

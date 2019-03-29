@@ -26,159 +26,105 @@ const categories = [
 const postings = [
   {
     id: 1,
-    item: 'baby food',
+    item: 'Ammunition',
+    tradeValue: '200 x Cigarettes',
+    location: 'Bellevue',
     description:
-      'this is a brief but adequate description of the item or service on apocalist',
-    seller: 'Lisa',
-    category: 'food',
-    imageUrl: './images/babyfood1.jpg',
-    tags: ['food', 'baby'],
-    datePosted: '78',
-    popularity: '9',
+      "Running Low on cigarettes and need some fast! Found these in the basement but don't have the right gun. 15 total.",
+    seller: 'Jim Bo',
+    category: 'weapons',
+    imgUrl:
+      'http://3.bp.blogspot.com/-A4LNp2BzAPk/TkqhzES9mNI/AAAAAAAAK48/ALIXFqWA38U/s1600/AK-47+Gun+Bullets.jpg',
+    date: '31 Mar 3022',
+    popularity: 76,
   },
+
   {
     id: 2,
-    item: 'baby food',
+    item: 'Baby Food',
+    tradeValue: '100 x cigarettes',
+    location: 'Capitol Hill',
     description:
-      'this is a brief but adequate description of the item or service on apocalist',
-    seller: 'Mike',
-    category: 'food',
-    imageUrl: './images/babyfood2.jpg',
-    tags: ['food', 'baby'],
-    datePosted: '56',
-    popularity: '98',
+      'Picked these up on my trek from Tacoma. Worth 100 cigarettes but will trade for a gallon of water.',
+    seller: 'Mary',
+    category: 'food/drink',
+    imgUrl:
+      'https://photos.offerup.com/CNm75KKi1SF7loUSRVXM8FezBSo=/600x800/f6f4/f6f42d58b28941778373cc599b7a27f1.jpg',
+    date: '1 Feb 3022',
+    popularity: 37,
   },
   {
     id: 3,
-    item: 'baby food',
+    item: 'Knives',
+    tradeValue: '670 x cigarettes',
+    location: 'Lake City',
     description:
-      'this is a brief but adequate description of the item or service on apocalist',
-    seller: 'Carlos',
-    category: 'food',
-    imageUrl: './images/babyfood3.jpg',
-    tags: ['food', 'baby'],
-    datePosted: '34',
-    popularity: '44',
+      'In desperate need of medical equipment. Wiling to let some of our extra knives go.',
+    seller: 'Brandon',
+    category: 'weapons',
+    imgUrl:
+      'https://media-cdn.tripadvisor.com/media/photo-s/0f/e1/9c/76/our-selection-of-knives.jpg',
+    date: '29 March 3022',
+    popularity: '72',
   },
+
   {
     id: 4,
-    item: 'baby pasta',
+    item: 'First Aid Kit',
+    tradeValue: '840 x cigarettes',
+    location: 'Seattle',
     description:
-      'this is a brief but adequate description of the item or service on apocalist',
-    seller: 'Owen',
-    category: 'food',
-    imageUrl: './images/babypasta.jpg',
-    tags: ['food', 'baby'],
-    datePosted: '77',
-    popularity: '34',
+      'Value is for each kit. Open to trade as an entire kits or as individual items. Let me know.',
+    seller: 'Nurse Karen',
+    category: 'medical',
+    imgUrl:
+      'https://photos.offerup.com/bSMLmPrSR-liRyAs69hIicwXqxU=/600x450/0da3/0da3e33c741448b39ea59bcad2d44490.jpg',
+    date: '29 March 3022',
+    popularity: '88',
   },
+
   {
     id: 5,
-    item: 'baseball bat',
+    item: 'Feminine Hygiene Products',
+    tradeValue: '180 x cigarettes',
+    location: 'Seattle',
     description:
-      'this is a brief but adequate description of the item or service on apocalist',
-    seller: 'SeQuoia',
-    category: 'baseball bat',
-    imageUrl: './images/bat.jpg',
-    tags: ['sports', 'weapon', 'entertainment'],
-    datePosted: '22',
-    popularity: '23',
+      'Found these in store raid. No females in my group. Good for plugging wounds too. Make an offer.',
+    seller: 'Alex B',
+    category: 'hygiene',
+    imgUrl:
+      'https://photos.offerup.com/Qvc_E4qdNX24tBI0Bs1rZTQl89s=/600x450/93b7/93b703b9a82e44f79b4d3350a574d942.jpg',
+    date: '2 March 3022',
+    popularity: '52',
   },
+
   {
     id: 6,
-    item: 'fresh eggs',
-    description:
-      'this is a brief but adequate description of the item or service on apocalist',
-    seller: 'Golshid',
-    category: 'food',
-    imageUrl: './images/eggs.jpg',
-    tags: ['food', 'fresh', 'chicken'],
-    datePosted: '34',
-    popularity: '12',
-  },
-  {
-    id: 7,
-    item: 'first aid kit',
-    description:
-      'this is a brief but adequate description of the item or service on apocalist',
-    seller: 'Sang',
-    category: 'first aid',
-    imageUrl: './images/firstaidkit.png',
-    tags: ['medical', 'bandages'],
-    datePosted: '56',
-    popularity: '33',
-  },
-  {
-    id: 8,
-    item: 'headphones',
-    description:
-      'this is a brief but adequate description of the item or service on apocalist',
-    seller: 'Emma',
-    category: 'electronics',
-    imageUrl: './images/headphones.png',
-    tags: ['music', 'electronics', 'music'],
-    datePosted: '44',
-    popularity: '78',
-  },
-  {
-    id: 9,
-    item: 'moisturizer',
-    description:
-      'this is a brief but adequate description of the item or service on apocalist',
-    seller: 'Kenny',
-    category: 'hygiene',
-    imageUrl: './images/moisturizer.jpg',
-    tags: ['skincare', 'lotion'],
-    datePosted: '22',
-    popularity: '9',
-  },
-  {
-    id: 10,
-    item: 'red jacket',
-    description:
-      'this is a brief but adequate description of the item or service on apocalist',
-    seller: 'Charles',
+    item: 'boots',
+    tradeValue: '410 x cigarettes',
+    location: 'Tacoma',
+    description: 'Barely used. Good boots for long treks.',
+    seller: 'James',
     category: 'clothing',
-    imageUrl: './images/redjacket.jpg',
-    tags: ['clothes', 'jacket', 'coat', 'red'],
-    datePosted: '22',
+    imgUrl:
+      'https://photos.offerup.com/A6z6V35y-6aC-8ZA5tFdB5ZifPM=/600x447/7f30/7f3097d2e3aa481cb1fffaa87ffc5ebe.jpg',
+    date: '26 March 3022',
     popularity: '90',
   },
+
   {
-    id: 11,
-    item: 'shoes',
+    id: 7,
+    item: 'MiniBot',
+    tradeValue: '900 x cigarettes',
+    location: 'Seattle',
     description:
-      'this is a brief but adequate description of the item or service on apocalist',
-    seller: 'Steve',
-    category: 'clothing',
-    imageUrl: './images/shoes.png',
-    tags: ['clothes', 'shoes', 'pretty'],
-    datePosted: '78',
-    popularity: '67',
-  },
-  {
-    id: 12,
-    item: 'sonicare toothbrush',
-    description:
-      'this is a brief but adequate description of the item or service on apocalist',
-    seller: 'FX',
-    category: 'hygiene',
-    imageUrl: './images/sonicare.jpg',
-    tags: ['toothbrush', 'electronic'],
-    datePosted: '78',
-    popularity: '65',
-  },
-  {
-    id: 13,
-    item: 'tampons',
-    description:
-      'this is a brief but adequate description of the item or service on apocalist',
-    seller: 'Gavin',
-    category: 'hygiene',
-    imageUrl: './images/tampons.png',
-    tags: ['feminine care', 'hygiene', 'personal care'],
-    datePosted: '78',
-    popularity: '31',
+      'Took out some bots and got a minibot in the process. They don’t work (put some bullets through ‘em) but they make good trophy conversation pieces.',
+    seller: 'Kim',
+    category: 'electronics',
+    imgUrl:
+      'https://dpadblogdotcom.files.wordpress.com/2014/06/della05.jpg?w=630',
+    date: '26 March 3022',
+    popularity: '98',
   },
 ];
 
@@ -191,20 +137,34 @@ class App extends Component {
       postsToDisplay: postList,
       fullPostList: postList,
       filterValue: '',
+      displayedPostings: [],
+      categoryBeenSelected: false,
     };
     this.handleFilterChange = this.handleFilterChange.bind(this);
+    this.searchPostings = this.searchPostings.bind(this);
   }
 
-  searchPostings = () => {
+  searchPostings = (categoryName) => {
+    let postings = this.state.postings;
     let found = false;
+    let postingsInCategory = [];
+    console.log(categoryName);
     for (let i = 0; i < postings.length; i++) {
-      if (this.state.postings[i].item.toLowerCase() == 'tampons') {
+      console.log(postings[i].category.toLowerCase());
+      console.log(categoryName);
+      if (postings[i].category.toLowerCase() === categoryName) {
         found = true;
+        console.log('found');
         if (found) {
-          return this.state.postings[i];
+          postingsInCategory.push(postings[i]);
+          console.log('pushed to postingsInCategory');
         }
       }
     }
+    this.setState({
+      displayedPostings: postingsInCategory,
+      categoryBeenSelected: true,
+    });
   };
 
   handleFilterChange = (event) => {
@@ -224,14 +184,17 @@ class App extends Component {
     const handleFilterChange = this.handleFilterChange;
     const filterValue = this.state.filterValue;
     const postsToDisplay = this.state.postsToDisplay;
+    const searchPostings = this.searchPostings;
+    const displayedPostings = this.state.displayedPostings;
+    const categoryBeenSelected = this.state.categoryBeenSelected;
 
     return (
       <Router>
-        <div className='App'>
+        <div>
           <nav>
-            {/* <Link to='/'>
+            <Link to='/home'>
               <FontAwesomeIcon icon={faHome} size='3x' color='#000000' />
-            </Link> */}
+            </Link>
             <div className='createPostingButtonDiv'>
               <Link to='/create-posting'>
                 <FontAwesomeIcon icon={faPlus} size='1x' color='#000000' />
@@ -239,8 +202,9 @@ class App extends Component {
               </Link>
             </div>
           </nav>
+          <Route path='/' exact />
           <Route
-            path='/'
+            path='/home'
             exact
             render={(props) => (
               <Home
@@ -249,6 +213,9 @@ class App extends Component {
                 filterValue={filterValue}
                 handleFilterChange={handleFilterChange}
                 postsToDisplay={postsToDisplay}
+                searchPostings={searchPostings}
+                categoryBeenSelected={categoryBeenSelected}
+                displayedPostings={displayedPostings}
                 {...props}
               />
             )}
@@ -257,7 +224,14 @@ class App extends Component {
           <Route
             path='/postings/'
             exact
-            render={(props) => <Postings postings={postings} {...props} />}
+            render={(props) => (
+              <Postings
+                postings={postings}
+                categoryBeenSelected={categoryBeenSelected}
+                displayedPostings={displayedPostings}
+                {...props}
+              />
+            )}
           />
           <Route
             path='/postings/:id'
