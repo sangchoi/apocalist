@@ -453,8 +453,10 @@ class App extends Component {
         <div className='App'>
           <div className='createPostingButtonDiv'>
             <Link to='/create-posting'>
-              <FontAwesomeIcon icon={faPlus} size='1x' color='#ffffff' /> Create
-              a Posting
+              <button>
+                <FontAwesomeIcon icon={faPlus} size='1x' color='#ffffff' />{' '}
+                Create Posting
+              </button>
             </Link>
           </div>
           <Route
