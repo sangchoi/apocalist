@@ -8,7 +8,7 @@ import Postings from './Postings';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
-import { faIdBadge } from '@fortawesome/free-solid-svg-icons';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const postList = ['Boots', 'Gun', 'Canned Beans', 'Knife', 'Toothbrush'];
 const categories = [
@@ -198,9 +198,11 @@ class App extends Component {
   searchPostings = () => {
     let found = false;
     for (let i = 0; i < postings.length; i++) {
-      if (this.state.postings[i].name == 'Boots') {
+      if (this.state.postings[i].item.toLowerCase() == 'tampons') {
         found = true;
-        break;
+        if (found) {
+          return this.state.postings[i];
+        }
       }
     }
   };
@@ -227,17 +229,15 @@ class App extends Component {
       <Router>
         <div className='App'>
           <nav>
-            <div className='navButtonDiv'>
-              <Link to='/'>
-                <FontAwesomeIcon icon={faHome} size='3x' color='#3B5998' />{' '}
-              </Link>
+            {/* <Link to='/'>
+              <FontAwesomeIcon icon={faHome} size='3x' color='#000000' />
+            </Link> */}
+            <div className='createPostingButtonDiv'>
               <Link to='/create-posting'>
-                <FontAwesomeIcon icon={faIdBadge} size='3x' color='#3B5998' />
+                <FontAwesomeIcon icon={faPlus} size='1x' color='#000000' />
                 Create a Posting
               </Link>
             </div>
-            {/* <Link to='/'>Home</Link>|
-            <Link to='/create-posting'>Create a Posting</Link> */}
           </nav>
           <Route
             path='/'

@@ -119,11 +119,12 @@ nav {
   width: 15rem;
 }
 
-.navBarDiv {
+.createPostingButtonDiv {
   border: 3px solid rosybrown;
+  background-color: rgba(224, 69, 69, 0.95);
   z-index: 10;
   position: fixed;
-  right: 2rem;
-  top: 2rem;
-  height: 8rem;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
 }

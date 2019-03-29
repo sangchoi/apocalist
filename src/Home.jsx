@@ -24,19 +24,19 @@ class Home extends Component {
         <div className='pageTitle'>
           <h1>Apocalist</h1>
         </div>
-        <div className='horizontalNav'>
-          <Categories
-            categories={this.props.categories}
-            selectCategory={this.selectCategory}
-            chosenCategory={this.state.chosenCategory}
-            {...this.props}
-          />
-        </div>
         <div className='searchBarDiv'>
           <SearchBar
             postings={this.props.postings}
             filterValue={this.props.filterValue}
             handleFilterChange={this.props.handleFilterChange}
+            {...this.props}
+          />
+        </div>
+        <div className='horizontalNav'>
+          <Categories
+            categories={this.props.categories}
+            selectCategory={this.selectCategory}
+            chosenCategory={this.state.chosenCategory}
             {...this.props}
           />
         </div>
