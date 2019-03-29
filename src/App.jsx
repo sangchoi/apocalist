@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
-const postList = ['Boots', 'Gun', 'Canned Beans', 'Knife', 'Toothbrush'];
+const postList = [];
 const categories = [
   'clothing',
   'hygiene',

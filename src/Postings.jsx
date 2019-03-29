@@ -30,13 +30,13 @@ const Postings = (props) => {
       return (
         <div key={index} className='postingCard'>
           <Link to={`/postings/${posting.id}`} onClick={followLink}>
-            <img src='https://placekitten.com/400/300' alt='' />
+            <img src={posting.imgUrl} alt='posting' className='postingImage' />
           </Link>
           <div className='postingBody'>
             <Link to={`/postings/${posting.id}`} onClick={followLink}>
               {posting.item}
             </Link>
-            <p>for sale by {posting.seller}</p>
+            <span>Location: {posting.location}</span>
           </div>
         </div>
       );
