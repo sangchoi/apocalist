@@ -6,13 +6,16 @@ const PostingShow = (props) => {
   });
   console.log(props.match.params.id);
   return (
-    <div>
-      <h1>{posting.item}</h1>
-      <p>
-        for sale by {posting.seller}
-        <br />
-        {posting.description}
-      </p>
+    <div className='postingShowDiv'>
+      <img src='http://placekitten.com/500/600' alt='' />
+      <div className='postingShowBody'>
+        <h1>{posting.item}</h1>
+        <p>
+          for sale by {posting.seller}
+          <br />
+          {posting.description}
+        </p>
+      </div>
     </div>
   );
 };

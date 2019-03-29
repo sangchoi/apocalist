@@ -17,6 +17,7 @@ class Home extends Component {
     this.setState({
       chosenCategory: e.target.getAttribute('value'),
     });
+    this.props.searchPostings(e.target.getAttribute('value'));
   };
 
   render() {
@@ -43,7 +44,11 @@ class Home extends Component {
         </div>
         <div className='bodyDiv'>
           <div className='searchResultsDiv'>{this.props.postsToDisplay}</div>
-          <Postings postings={this.props.postings} {...this.props} />
+          <Postings
+            postings={this.props.postings}
+            categoryBeenSelected={this.props.categoryBeenSelected}
+            {...this.props}
+          />
         </div>
       </div>
     );

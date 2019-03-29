@@ -41,8 +41,8 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-around;
+  align-items: center;
 }
 .searchResultsDiv {
   border: 3px solid orangered;
@@ -97,11 +97,11 @@ body {
   width: 15rem;
 }
 .createPostingButtonDiv {
-  border: 3px solid rosybrown;
-  background-color: rgba(224, 69, 69, 0.95);
-  z-index: 10;
+  background-color: rgb(183, 39, 14);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
   position: fixed;
-  bottom: 2rem;
+  bottom: 1rem;
   display: flex;
   align-items: center;
 }
