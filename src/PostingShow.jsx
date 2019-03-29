@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faEllipsisH } from '@fortawesome/free-solid-svg-icons';
 import Map from './images/LocationMap.png';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const PostingShow = (props) => {
   let posting = props.postings.find((posting) => {
@@ -12,6 +13,12 @@ const PostingShow = (props) => {
   return (
     <div className='postingsDivShow'>
       <div className='showPostingCard'>
+        <Link to='/home'>
+          <div className='pageTitle'>
+            <h1 className='ApocalistHeader'>Apocalist</h1>
+          </div>
+        </Link>
+        <br />
         <img src={posting.imgUrl} alt='posting' className='postingImageShow' />
         <div className='postingBody'>
           <span className='showPostingBody'>

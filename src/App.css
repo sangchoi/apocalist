@@ -17,7 +17,7 @@ a {
 }
 
 .pageTitle {
-  border: 3px solid maroon;
+  /* border: 3px solid maroon; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -25,7 +25,7 @@ a {
   text-align: center;
 }
 .bodyDiv {
-  border: 3px solid orange;
+  /* border: 3px solid orange; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -33,7 +33,7 @@ a {
   text-align: center;
 }
 .horizontalNav {
-  border: 3px solid darkblue;
+  /* border: 3px solid darkblue; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -41,7 +41,7 @@ a {
   text-align: center;
 }
 .searchBarDiv {
-  border: 3px solid cornflowerblue;
+  /* border: 3px solid cornflowerblue; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -62,7 +62,7 @@ a {
   padding: 1rem;
 }
 .postingsDiv {
-  border: 3px solid black;
+  /* border: 3px solid black; */
   display: flex;
   background-color: #2d2b2b;
   flex-direction: row;
@@ -70,7 +70,7 @@ a {
   justify-content: space-evenly;
 }
 .postingCard {
-  border: 3px solid purple;
+  border: 3px solid gray;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -79,7 +79,7 @@ a {
   margin-bottom: 1rem;
 }
 .postingBody {
-  border: 3px solid yellow;
+  /* border: 3px solid yellow; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -87,13 +87,13 @@ a {
   text-align: left;
 }
 .createPostingOuterDiv {
-  border: 3px solid brown;
+  /* border: 3px solid brown; */
   display: flex;
   justify-content: center;
   height: 100vh;
 }
 .createPostingDiv {
-  border: 3px solid teal;
+  /* border: 3px solid teal; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -116,7 +116,7 @@ a {
 
 .homeButtonDiv {
   border-radius: 0.3rem;
-  border: 2px solid rgb(183, 39, 14);
+  /* border: 2px solid rgb(183, 39, 14); */
   padding: 0.5rem;
   position: fixed;
   top: 1rem;
@@ -126,7 +126,7 @@ a {
 }
 
 .postingButtonsDiv {
-  border: 3px solid olivedrab;
+  /* border: 3px solid olivedrab; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -135,7 +135,6 @@ a {
 }
 
 .postingsDivShow {
-  border: 3px solid black;
   display: flex;
   background-color: #2d2b2b;
   flex-direction: row;
@@ -144,7 +143,7 @@ a {
 }
 
 .postingShowDiv {
-  border: 3px solid olivedrab;
+  /* border: 3px solid olivedrab; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,7 +151,7 @@ a {
   text-align: center;
 }
 .subPostingShowDiv {
-  border: 3px solid olivedrab;
+  /* border: 3px solid olivedrab; */
   display: inline-block;
 }
 
@@ -161,7 +160,8 @@ button {
   background-color: rgb(183, 39, 14);
   padding: 0.5em;
   color: white;
-  border: 1px solid gray;
+  margin: 0.5em 0em;
+  /* border: 1px solid gray; */
 }
 
 button {
@@ -175,7 +175,7 @@ button:hover {
 }
 
 .showPostingCard {
-  border: 3px solid purple;
+  border: 3px solid gray;
   color: white;
   display: flex;
   flex-direction: column;
@@ -185,10 +185,11 @@ button:hover {
   margin-bottom: 1rem;
   text-align: center;
   margin: 0;
+  padding: 1rem;
 }
 
 .showPostingTitleDiv {
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -224,7 +225,7 @@ button:hover {
 }
 
 .postingButtonsDivShow {
-  border: 3px solid olivedrab;
+  /* border: 3px solid olivedrab; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
