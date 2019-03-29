@@ -12,11 +12,19 @@ class App extends Component {
     super(props);
     this.state = {
       categories: [
-        { id: 1, name: 'Deep Clean' },
-        { id: 2, name: 'Filling' },
-        { id: 3, name: 'Crown' },
-        { id: 4, name: 'Root Canal' },
-        { id: 5, name: 'Deep Root Canal' },
+        { id: 1, item: 'baby food', seller: 'Lisa', category: 'food', imageUrl: './images/babyfood1.jpg', tags: ['food', 'baby'], datePosted: '78', popularity: '9'},
+        { id: 2, item: 'baby food', seller: 'Mike', category: 'food', imageUrl: './images/babyfood2.jpg', tags: ['food', 'baby'], datePosted: '56', popularity: '98'},
+        { id: 3, item: 'baby food', seller: 'Carlos', category: 'food', imageUrl: './images/babyfood3.jpg', tags: ['food', 'baby'], datePosted: '34', popularity: '44'},
+        { id: 4, item: 'baby pasta', seller: 'Owen', category: 'food', imageUrl: './images/babypasta.jpg', tags: ['food', 'baby'], datePosted: '77', popularity: '34'},
+        { id: 5, item: 'baseball bat', seller: 'SeQuoia', category: 'baseball bat', imageUrl: './images/bat.jpg', tags: ['sports', 'weapon', 'entertainment'], datePosted: '22', popularity: '23'},
+        { id: 6, item: 'fresh eggs', seller: 'Golshid', category: 'food', imageUrl: './images/eggs.jpg', tags: ['food', 'fresh', 'chicken'], datePosted: '34', popularity: '12'},
+        { id: 7, item: 'first aid kit', seller: 'Sang', category: 'first aid', imageUrl: './images/firstaidkit.png', tags: ['medical', 'bandages'], datePosted: '56', popularity: '33'},
+        { id: 8, item: 'headphones', seller: 'Emma', category: 'electronics', imageUrl: './images/headphones.png', tags: ['music', 'electronics', 'music'], datePosted: '44', popularity: '78'},
+        { id: 9, item: 'moisturizer', seller: 'Kenny', category: 'hygiene', imageUrl: './images/moisturizer.jpg', tags: ['skincare', 'lotion'], datePosted: '22', popularity: '9'},
+        { id: 10, item: 'red jacket', seller: 'Charles', category: 'clothing', imageUrl: './images/redjacket.jpg', tags: ['clothes', 'jacket', 'coat', 'red'], datePosted: '22', popularity: '90'},
+        { id: 11, item: 'shoes', seller: 'Steve', category: 'clothing', imageUrl: './images/shoes.png', tags: ['clothes', 'shoes', 'pretty'], datePosted: '78', popularity: '67'},
+        { id: 12, item: 'sonicare toothbrush', seller: 'FX', category: 'hygiene', imageUrl: './images/sonicare.jpg', tags: ['toothbrush', 'electronic'] , datePosted: '78', popularity: '65'},
+        { id: 13, item: 'tampons', seller: 'Gavin', category: 'hygiene', imageUrl: './images/tampons.png', tags: ['feminine care', 'hygiene', 'personal care' ], datePosted: '78', popularity: '31'}
       ],
     };
   }
