@@ -1,109 +1,81 @@
-body {
+.App {
+  text-align: center;
   height: 100%;
+  border: 3px rgb(126, 4, 4) solid;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 100px 100px auto;
+  grid-template-areas: "logo search menu"
+                       "nav nav nav"
+                       "pic pic pic";
 }
 
-nav {
-  border: 3px solid salmon;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+.horizontalNav {
+  grid-area: nav;
+  border: 1px solid darkblue;
 }
+
+/*
+nav {
+  grid-area: nav;
+  border: 1px solid salmon;
+ 
+}*/
+
+.searchBarDiv {
+  border: 1px solid cornflowerblue;
+  grid-area: search;
+}
+
 
 .chosen {
   background-color: aqua;
   color: red;
 }
 
-.App {
-  border: 3px solid pink;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-}
 
 .pageTitle {
-  border: 3px solid maroon;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+  border: 1px solid maroon;
+
 }
 
 .bodyDiv {
-  border: 3px solid orange;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
+  border: 1px solid orange;
+ 
 }
 
-.horizontalNav {
-  border: 3px solid darkblue;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-}
 
-.searchBarDiv {
-  border: 3px solid cornflowerblue;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-}
 
 .categoryNavItem {
   color: navy;
-  text-decoration: underline;
-  cursor: pointer;
+  /* text-decoration: underline;
+  cursor: pointer; */
   padding: 1rem;
 }
 
 .postingsDiv {
-  border: 3px solid black;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  border: 1px solid black;
+
 }
 
 .postingCard {
-  border: 3px solid purple;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  border: 1px solid purple;
+
 }
 
 .postingBody {
-  border: 3px solid yellow;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  text-align: left;
+  border: 1px solid yellow;
+ 
 }
 
 .createPostingOuterDiv {
-  border: 3px solid brown;
-  display: flex;
-  justify-content: center;
+  border: 1px solid brown;
+ 
 }
 
 .createPostingDiv {
-  border: 3px solid teal;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex-basis: auto;
-  justify-content: center;
-  width: 15rem;
+  border: 1px solid teal;
+
 }

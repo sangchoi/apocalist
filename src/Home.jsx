@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Postings from './Postings';
 import Categories from './Categories';
 import SearchBar from './SearchBar';
+import './Home.css'
 
 class Home extends Component {
   constructor(props) {

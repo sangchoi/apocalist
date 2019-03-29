@@ -34,7 +34,7 @@ const postings = [
   { id: 11, item: 'shoes', seller: 'Steve', category: 'clothing', imageUrl: './images/shoes.png', tags: ['clothes', 'shoes', 'pretty'], datePosted: '78', popularity: '67'},
   { id: 12, item: 'sonicare toothbrush', seller: 'FX', category: 'hygiene', imageUrl: './images/sonicare.jpg', tags: ['toothbrush', 'electronic'] , datePosted: '78', popularity: '65'},
   { id: 13, item: 'tampons', seller: 'Gavin', category: 'hygiene', imageUrl: './images/tampons.png', tags: ['feminine care', 'hygiene', 'personal care' ], datePosted: '78', popularity: '31'}
-],
+]
 
 class App extends Component {
   constructor(props) {
