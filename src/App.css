@@ -1,27 +1,15 @@
-body {
-  height: 100%;
+@font-face {
+  font-family: 'Apocalypse';
+  src: local('Apocalypse'), url(./fonts/Apocalypse.ttf) format('ttf');
 }
 
-nav {
-  border: 3px solid salmon;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+body {
+  height: 100%;
 }
 
 .chosen {
   background-color: aqua;
   color: red;
-}
-
-.App {
-  border: 3px solid pink;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
 }
 
 .pageTitle {
@@ -32,7 +20,6 @@ nav {
   justify-content: center;
   text-align: center;
 }
-
 .bodyDiv {
   border: 3px solid orange;
   display: flex;
@@ -41,7 +28,6 @@ nav {
   justify-content: center;
   text-align: center;
 }
-
 .horizontalNav {
   border: 3px solid darkblue;
   display: flex;
@@ -50,7 +36,6 @@ nav {
   justify-content: center;
   text-align: center;
 }
-
 .searchBarDiv {
   border: 3px solid cornflowerblue;
   display: flex;
@@ -59,7 +44,6 @@ nav {
   justify-content: center;
   text-align: center;
 }
-
 .searchResultsDiv {
   border: 3px solid orangered;
   display: flex;
@@ -68,14 +52,12 @@ nav {
   justify-content: center;
   text-align: center;
 }
-
 .categoryNavItem {
   color: navy;
   text-decoration: underline;
   cursor: pointer;
   padding: 1rem;
 }
-
 .postingsDiv {
   border: 3px solid black;
   display: flex;
@@ -83,7 +65,6 @@ nav {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 .postingCard {
   border: 3px solid purple;
   display: flex;
@@ -93,7 +74,6 @@ nav {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
 .postingBody {
   border: 3px solid yellow;
   display: flex;
@@ -102,13 +82,11 @@ nav {
   justify-content: flex-start;
   text-align: left;
 }
-
 .createPostingOuterDiv {
   border: 3px solid brown;
   display: flex;
   justify-content: center;
 }
-
 .createPostingDiv {
   border: 3px solid teal;
   display: flex;
@@ -118,7 +96,6 @@ nav {
   justify-content: center;
   width: 15rem;
 }
-
 .createPostingButtonDiv {
   border: 3px solid rosybrown;
   background-color: rgba(224, 69, 69, 0.95);

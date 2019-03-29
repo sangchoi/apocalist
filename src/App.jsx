@@ -228,17 +228,12 @@ class App extends Component {
     return (
       <Router>
         <div className='App'>
-          <nav>
-            {/* <Link to='/'>
-              <FontAwesomeIcon icon={faHome} size='3x' color='#000000' />
-            </Link> */}
             <div className='createPostingButtonDiv'>
               <Link to='/create-posting'>
                 <FontAwesomeIcon icon={faPlus} size='1x' color='#000000' />
                 Create a Posting
               </Link>
             </div>
-          </nav>
           <Route
             path='/'
             exact

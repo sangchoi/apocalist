@@ -15,7 +15,7 @@ const Categories = (props) => {
       );
     } else {
       return (
-        <span
+        <span 
           key={index}
           className='categoryNavItem'
           value={category}
@@ -23,10 +23,11 @@ const Categories = (props) => {
         >
           {category}
         </span>
+        
       );
     }
   });
-  return <div>{categories}</div>;
+  return <div className="scrollCategories">{categories}</div>;
 };
 
 export default Categories;
