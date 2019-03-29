@@ -1,9 +1,15 @@
 import React from 'react';
 import './CreatePosting.css';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Contact = (props) => {
   return (
     <div className='CreatePosting'>
+      <Link to='/home'>
+        <div className='pageTitle'>
+          <h1 className='ApocalistHeader'>Apocalist</h1>
+        </div>
+      </Link>
       <div className='pageTitle'>
         <h1 className='CreatePostingHeader'>Create a Posting</h1>
       </div>

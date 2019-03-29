@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: white;
+  color: rgb(204, 185, 185);
 }
 
 .chosen {
@@ -167,6 +167,10 @@ button {
 
 button:hover {
   background-color: #4caf50; /* Green */
+  color: white;
+}
+
+a:hover {
   color: white;
 }
 
