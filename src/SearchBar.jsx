@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import logo from './images/logo.png';
 
 const SearchBar = (props) => {
   return (
@@ -10,7 +11,8 @@ const SearchBar = (props) => {
       <div className='iconDiv'>
         <Router>
           <Link to='/home'>
-            <FontAwesomeIcon icon={faHome} size='1x' color='#000000' />
+            {/* <FontAwesomeIcon icon={faHome} size='1x' color='#000000' /> */}
+            <img className="logologo" src={logo} />
           </Link>
         </Router>
       </div>
