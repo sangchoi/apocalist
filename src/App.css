@@ -7,8 +7,12 @@ body {
   height: 100%;
 }
 
+a {
+  color: white;
+}
+
 .chosen {
-  background-color: rgba(252, 252, 252, .2);
+  background-color: rgba(252, 252, 252, 0.2);
   color: red;
 }
 
@@ -45,7 +49,6 @@ body {
   align-items: center;
 }
 .searchResultsDiv {
-  border: 3px solid orangered;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -61,6 +64,7 @@ body {
 .postingsDiv {
   border: 3px solid black;
   display: flex;
+  background-color: #2d2b2b;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -100,10 +104,136 @@ body {
 }
 .createPostingButtonDiv {
   background-color: rgb(183, 39, 14);
+  color: white;
   border-radius: 0.3rem;
   padding: 0.5rem;
   position: fixed;
   bottom: 1rem;
+  right: 1rem;
   display: flex;
   align-items: center;
+}
+
+.homeButtonDiv {
+  border-radius: 0.3rem;
+  border: 2px solid rgb(183, 39, 14);
+  padding: 0.5rem;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.postingButtonsDiv {
+  border: 3px solid olivedrab;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.postingsDivShow {
+  border: 3px solid black;
+  display: flex;
+  background-color: #2d2b2b;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.postingShowDiv {
+  border: 3px solid olivedrab;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.subPostingShowDiv {
+  border: 3px solid olivedrab;
+  display: inline-block;
+}
+
+button {
+  border-radius: 1em;
+  background-color: rgb(183, 39, 14);
+  padding: 0.5em;
+  color: white;
+  border: 1px solid gray;
+}
+
+button {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.showPostingCard {
+  border: 3px solid purple;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+.showPostingTitleDiv {
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showPostingTitle {
+  font-size: 1.5em;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.showPostingBody {
+  margin: 0;
+  padding: 0em 0.2em;
+}
+
+.available {
+  color: white;
+  background-color: rgb(33, 116, 8);
+  border-radius: 0.2em;
+  padding: 0 0.2em;
+}
+
+.descriptionDiv {
+  width: 330px;
+  margin: 0;
+  padding: 0;
+}
+
+.postingImageShow {
+  width: 350px;
+  text-align: center;
+}
+
+.postingButtonsDivShow {
+  border: 3px solid olivedrab;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+}
+
+.imageUpload {
+  width: 350px;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.1);
 }

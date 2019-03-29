@@ -12,118 +12,115 @@
                          "bodyDiv";
   } */
 /* FONTS -------------------------------------------------------------------- */
-  @font-face {
-    font-family: 'Apocalypse';
-    src: local('Apocalypse'), url(./fonts/Apocalypse.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Roboto-Bold';
-    src: local('Roboto-Bold'), url(./fonts/Roboto-Bold.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Roboto-Medium';
-    src: local('Roboto-Medium'), url(./fonts/Roboto-Medium.ttf) format('truetype');
-  }
-
-  @font-face {
-    font-family: 'Roboto-Thin';
-    src: local('Roboto-Thin'), url(./fonts/Roboto-Thin.ttf) format('truetype');
-  }
-
-.home {
-    background-color: rgb(45, 43, 43);
-    font-family: Roboto-Medium;
+@font-face {
+  font-family: 'Apocalypse';
+  src: local('Apocalypse'), url(./fonts/Apocalypse.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: local('Roboto-Bold'), url(./fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: local('Roboto-Medium'), url(./fonts/Roboto-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: local('Roboto-Thin'), url(./fonts/Roboto-Thin.ttf) format('truetype');
+}
+
+.home {
+  background-color: rgb(45, 43, 43);
+  font-family: Roboto-Medium;
+}
 
 .ApocalistHeader {
-    border: 1px green solid;
-    font-family: Apocalypse;
-    font-size: 4em;
-    padding: 0;
-    letter-spacing: .2em;
-    margin: 0 auto;
-    color: white;
+  border: 1px green solid;
+  font-family: Apocalypse;
+  font-size: 4em;
+  padding: 0;
+  letter-spacing: 0.2em;
+  margin: 0 auto;
+  color: white;
 }
 
 /* SEARCH BAR DIV -------------------------------------------------------------------- */
 
 .searchBarDiv {
-    padding: 12px;
+  padding: 12px;
 }
 
 .iconDiv {
-    display: inline-block;
-    /* padding: 0 100px 0 0; */
-    font-size: 2em;
+  display: inline-block;
+  /* padding: 0 100px 0 0; */
+  font-size: 2em;
 }
 
 .logologo {
-    width: 150px;
-    height: 120px;
-    vertical-align: middle;
-    display: inline-block;
-    border: 1px lightblue solid;
-    padding: 0;
+  width: 150px;
+  height: 120px;
+  vertical-align: middle;
+  display: inline-block;
+  border: 1px lightblue solid;
+  padding: 0;
 }
 
 .searchInputDiv {
-    display: inline-block;
-    width: 815px;
-    font-size: 2em;
-    border: 1px red solid;
-    margin-left: -80px;
-    padding-left: 40px; 
-    padding-right: 40px;
+  display: inline-block;
+  width: 815px;
+  font-size: 2em;
+  border: 1px red solid;
+  margin-left: -80px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .searchInput {
-    font-size: .6em;
-    text-align: center;
-    font-family: Apocalypse;
-    border: 1px rgb(21, 255, 0) solid;
-    width: 815px;
-    margin: 5px;
-    background-color: rgb(45, 43, 43);
-
+  font-size: 0.6em;
+  text-align: center;
+  font-family: Apocalypse;
+  border: 1px rgb(21, 255, 0) solid;
+  width: 815px;
+  margin: 5px;
+  background-color: rgb(45, 43, 43);
 }
 
 .menuIconDiv {
-    display: inline-block;
-    font-size: 2em;
+  display: inline-block;
+  font-size: 2em;
 }
 
 /* CATEGORIES DIV -------------------------------------------------------------------- */
 
 .categoryNavItem {
-    font-size: 1.5em;
-    color: white;
-    font-family: Roboto-Bold;
+  font-size: 1.5em;
+  color: white;
+  font-family: Roboto-Bold;
 }
 
 .scrollCategories {
-    max-width: 1000px;
-    overflow-x: scroll;
+  max-width: 1000px;
+  overflow-x: scroll;
 }
 
 /* POSTINGS DIV -------------------------------------------------------------------- */
 
 .postingImage {
-    width: 350px;
-    height: 350px;
+  width: 350px;
+  height: 350px;
 }
 
 .postingsDiv {
-    color: white;
+  color: white;
 }
 
 .postingsLocation {
-    color: white;
+  color: white;
 }
 
 .postingBodyLink:hover {
-    color: white;
+  color: white;
 }
-
