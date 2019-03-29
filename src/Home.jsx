@@ -21,17 +21,9 @@ class Home extends Component {
 
   render() {
     return (
-      <>
+      <div className="home">
         <div className='pageTitle'>
-          <h1>Apocalist</h1>
-        </div>
-        <div className='horizontalNav'>
-          <Categories
-            categories={this.props.categories}
-            selectCategory={this.selectCategory}
-            chosenCategory={this.state.chosenCategory}
-            {...this.props}
-          />
+          <h1 className="ApocalistHeader">Apocalist</h1>
         </div>
         <div className='searchBarDiv'>
           <SearchBar
@@ -41,11 +33,19 @@ class Home extends Component {
             {...this.props}
           />
         </div>
+        <div className='horizontalNav'>
+          <Categories
+            categories={this.props.categories}
+            selectCategory={this.selectCategory}
+            chosenCategory={this.state.chosenCategory}
+            {...this.props}
+          />
+        </div>
         <div className='bodyDiv'>
-          {this.props.postsToDisplay}
+          <div className='searchResultsDiv'>{this.props.postsToDisplay}</div>
           <Postings postings={this.props.postings} {...this.props} />
         </div>
-      </>
+      </div>
     );
   }
 }

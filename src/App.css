@@ -1,81 +1,107 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Apocalypse';
+  src: local('Apocalypse'), url(./fonts/Apocalypse.ttf) format('ttf');
+}
+
+body {
   height: 100%;
-  border: 3px rgb(126, 4, 4) solid;
-  min-height: 100vh;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 100px 100px auto;
-  grid-template-areas: "logo search menu"
-                       "nav nav nav"
-                       "pic pic pic";
 }
-
-.horizontalNav {
-  grid-area: nav;
-  border: 1px solid darkblue;
-}
-
-/*
-nav {
-  grid-area: nav;
-  border: 1px solid salmon;
- 
-}*/
-
-.searchBarDiv {
-  border: 1px solid cornflowerblue;
-  grid-area: search;
-}
-
 
 .chosen {
   background-color: aqua;
   color: red;
 }
 
-
 .pageTitle {
-  border: 1px solid maroon;
-
+  border: 3px solid maroon;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
-
 .bodyDiv {
-  border: 1px solid orange;
- 
+  border: 3px solid orange;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
-
-
-
+.horizontalNav {
+  border: 3px solid darkblue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.searchBarDiv {
+  border: 3px solid cornflowerblue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.searchResultsDiv {
+  border: 3px solid orangered;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
 .categoryNavItem {
   color: navy;
-  /* text-decoration: underline;
-  cursor: pointer; */
+  text-decoration: underline;
+  cursor: pointer;
   padding: 1rem;
 }
-
 .postingsDiv {
-  border: 1px solid black;
-
+  border: 3px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-
 .postingCard {
-  border: 1px solid purple;
-
+  border: 3px solid purple;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-
 .postingBody {
-  border: 1px solid yellow;
- 
+  border: 3px solid yellow;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  text-align: left;
 }
-
 .createPostingOuterDiv {
-  border: 1px solid brown;
- 
+  border: 3px solid brown;
+  display: flex;
+  justify-content: center;
 }
-
 .createPostingDiv {
-  border: 1px solid teal;
-
+  border: 3px solid teal;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  justify-content: center;
+  width: 15rem;
+}
+.createPostingButtonDiv {
+  border: 3px solid rosybrown;
+  background-color: rgba(224, 69, 69, 0.95);
+  z-index: 10;
+  position: fixed;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
 }

@@ -1,0 +1,66 @@
+/* .home {
+    text-align: center;
+    height: 100%;
+    border: 3px rgb(126, 4, 4) solid;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 50px auto;
+    grid-template-areas: "searchBarDiv"
+                         "horizontalNav"
+                         "bodyDiv";
+  } */
+
+  @font-face {
+    font-family: 'Apocalypse';
+    src: local('Apocalypse'), url(./fonts/Apocalypse.ttf) format('truetype');
+  }
+
+.ApocalistHeader {
+    border: 1px green solid;
+    font-family: Apocalypse;
+    font-size: 3em;
+    padding: 0;
+    margin: 
+}
+
+/* SEARCH BAR DIV -------------------------------------------------------------------- */
+
+.searchBarDiv {
+    padding: 12px;
+}
+
+.iconDiv {
+    display: inline-block;
+    /* padding: 0 100px 0 0; */
+    font-size: 2em;
+}
+
+.searchInputDiv {
+    display: inline-block;
+    width: 815px;
+    font-size: 2em;
+    
+}
+
+.searchInput {
+    font-size: .6em;
+    text-align: center;
+}
+
+.menuIconDiv {
+    display: inline-block;
+    font-size: 2em;
+}
+
+/* CATEGORIES DIV -------------------------------------------------------------------- */
+
+.categoryNavItem {
+    font-size: 1.5em;
+}
+
+.scrollCategories {
+    max-width: 1000px;
+    overflow-x: scroll;
+}
