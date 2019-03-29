@@ -60,11 +60,23 @@
     font-size: 2em;
 }
 
+.logologo {
+    width: 150px;
+    height: 120px;
+    vertical-align: middle;
+    display: inline-block;
+    border: 1px lightblue solid;
+    padding: 0;
+}
+
 .searchInputDiv {
     display: inline-block;
     width: 815px;
     font-size: 2em;
     border: 1px red solid;
+    margin-left: -80px;
+    padding-left: 40px; 
+    padding-right: 40px;
 }
 
 .searchInput {
@@ -114,3 +126,4 @@
 .postingBodyLink:hover {
     color: white;
 }
+
