@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: local('Roboto-Medium'), url(./fonts/Roboto-Medium.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Roboto-Thin';
+    src: local('Roboto-Thin'), url(./fonts/Roboto-Thin.ttf) format('truetype');
+  }
+
+
 .CreatePosting {
     background-color: rgb(45, 43, 43);
     font-family: Roboto-Medium;
@@ -12,14 +23,14 @@
     border: 1px red solid;
 }
 
-.CreatePostingInput1, .CreatePostingInput2, .CreatePostingInput3 {
+.CreatePostingInput1, .CreatePostingInput2, .CreatePostingInput3, .CreatePostingInput4, .CreatePostingInput5, .CreatePostingInput6 {
     background-color: rgb(45, 43, 43);
     font-family: Roboto-Medium;
     border: none;
     border-bottom: 1px white solid;
     width: 400px;
     vertical-align: middle;
-    padding: 10px;
+    padding: 10px 10px 10px 10px;
 }
 
 .CreatePostingInput1 {
@@ -34,15 +45,54 @@
     width: 510px;
 }
 
-.CreatePostingLabel1, .CreatePostingLabel2, .CreatePostingLabel3 {
+.CreatePostingInput4 {
+    width: 520px;
+}
+
+.CreatePostingInput5 {
+    width: 480px;
+}
+
+.CreatePostingInput6 {
+    width: 480px;
+}
+
+.CreatePostingLabel1, .CreatePostingLabel2, .CreatePostingLabel3, .CreatePostingLabel4, .CreatePostingLabel5, .CreatePostingLabel6 {
     font-family: Roboto-Bold;
     color: white;
     font-size: 2em;
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
+    /* border: 1px red solid; */
+    
 }
 
-/* .CreatePostingButton {
-background-color: rgb(183, 39, 14);
+.CreatePostingLabel1 {
+    margin: 400px 0 0 0;
+}
+
+.CreatePostingImageButton {
+  background-color: rgb(183, 39, 14);
   border-radius: 0.3rem;
   padding: 0.5rem;
-} */
+  display: inline-block;
+  border: none;
+  width: 300px;
+  padding: 10px;
+  margin: 30px 37px;
+  font-family: Roboto-Medium;
+  font-size: 1em;
+  
+}
+
+.CreatePostingButton {
+    background-color: rgb(183, 39, 14);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    display: inline-block;
+    border: none;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    font-family: Roboto-Medium;
+    font-size: 1em;
+    }
